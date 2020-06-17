@@ -1,0 +1,523 @@
+@import "variables";
+@import "mixins";
+@import "screen";
+@import "old";
+
+@font-face {
+  font-family: 'Teko';
+  src: url("../fonts/teko.ttf");
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/RobotoCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+body {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  font-family: $roboto;
+  color: $colorText;
+}
+
+header {
+  background-color: $colorMain;
+  .scrolled-nav {
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+    background-color: $colorMain;
+  }
+  .navbar-brand img {
+    width: 150px;
+  }
+  .navbar li {
+    @include mxa(.35rem);
+  }
+}
+
+.main-section {
+  @include bgImgCover(bg2);
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include md-max {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .text-h2-title {
+    display: none;
+    p {
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  @include md-max {
+    .stock-text {
+      display: none;
+    }
+    .text-h2-title {
+      display: block;
+      h3 {
+        color: $colorAccent;
+      }
+    }
+  }
+  h1 {
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $colorAccent;
+    margin: 0;
+    padding: 0;
+    span {
+      @include sm-max {
+        font-size: 0.9em;
+      }
+    }
+    @include lg-max {}
+    @include md-max {
+      font-size: 4em;
+    }
+    @include sm-max {
+      font-size: 3em;
+    }
+  }
+  h2 {
+    font-size: 140px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top: 280px;
+    color: #fff;
+    @include lg-max {}
+    @include md-max {}
+    @include sm-max {}
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    h2 {
+      font-size: 110px;
+    }
+    h1 {
+      font-size: 110px;
+    }
+  }
+
+  h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent
+  }
+
+  h2:nth-child(2) {
+    color: $colorAccent;
+    -webkit-animation: animate 6s ease-in-out infinite;
+    animation: animate 6s ease-in-out infinite;
+  }
+  @keyframes animate {
+    0%, 100% {
+      clip-path: polygon(0% 22%, 15% 22%, 28% 25%, 48% 30%, 67% 40%, 84% 69%, 100% 75%, 100% 100%, 0% 100%);
+    }
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+}
+
+.opp-block {
+  @include mya(4.75rem);
+  h1 {
+    @include h1;
+  }
+  .opp-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 150px;
+    }
+    h5 {
+      @include title(1.8em);
+    }
+    p {
+      text-align: center;
+      font-family: $robotoLight;
+    }
+  }
+}
+
+.third-section {
+  margin-top: 4.75rem;
+  a {
+    &:hover {
+      img {
+        transform: scale(1.05);
+        transition-duration: 0.5s;
+      }
+      h3 {
+        color: $colorAccent;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+  h1 {
+    @include h1;
+  }
+  img {
+    width: 100%;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+  }
+  h3 {
+    @include title(1.8em);
+    text-align: center;
+    transition-duration: 0.5s;
+  }
+  p {
+    text-align: center;
+    font-family: $robotoLight;
+    color: $colorText;
+  }
+}
+
+.feedback-short{
+  margin-top: 7.55rem;
+  @include bgImgCover(bg1);
+  h1 {
+    @include h1;
+    color: white;
+  }
+  .feedback-short-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 120px;
+  }
+  h5 {
+    margin-top: .75rem;
+    font-family: $robotoBold;
+    text-align: center;
+    color: white;
+  }
+  @include md-max {
+    .col-md-3 {
+      margin-top: 2.75rem;
+    }
+  }
+}
+
+
+.calculate {
+  margin-top: 7.25rem;
+  h1 {
+    @include h1;
+  }
+  .show-calc {
+    display: block;
+  }
+  .hide-calc {
+    display: none;
+  }
+  table {
+    font-size: 1.2em;
+  }
+  .calculate-how-to-use {
+    h4 {
+      font-family: $robotoBold;
+    }
+  }
+}
+
+
+
+.price-section {
+  margin-top: 4.25rem;
+  h1 {
+    @include h1;
+    margin-bottom: 0;
+  }
+  h3 {
+    text-align: center;
+    font-family: $robotoBold;
+    @include my(2.75rem, 0);
+  }
+  p {
+    text-align: center;
+  }
+  th {
+    vertical-align: middle!important;
+  }
+  td {
+    vertical-align: middle!important;
+  }
+  .prices-add-info {
+    margin-top: 1.25rem;
+    p {
+      text-align: left;
+      span {
+        font-family: $robotoBold;
+      }
+    }
+  }
+  .prices-table {
+    @include max-w(343) {
+      overflow-x: scroll;
+    }
+    th {
+      @include md-max {
+        font-size: 0.8em;
+      }
+      @include sm-max {
+        font-size: 0.5em;
+      }
+    }
+    td {
+      @include md-max {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+.contact-section {
+  margin-top: 5.25rem;
+  h1 {
+    @include h1;
+    margin-bottom: 1.25rem;
+  }
+  h5 {
+    font-family: $robotoBold;
+  }
+  .contact-section-item {
+    margin-top: 1.15rem;
+    border: 1px solid $colorTextFooter;
+    border-radius: 5px;
+    padding: 1.25rem;
+    h4 {
+      font-family: $teko;
+      font-size: 2.15em;
+      letter-spacing: 1.2px;
+      font-weight: bold;
+      i {
+        margin-right: 1.25rem;
+      }
+    }
+    color: white;
+    .btn-phone {
+      @include sm-min {
+        display: none;
+      }
+    }
+    .contact-add-info {
+      h6 {
+        font-size: 1em;
+        font-family: $robotoBold;
+      }
+      p {
+        color: $colorText;
+      }
+    }
+  }
+  form {
+    color: $colorText;
+  }
+}
+
+
+footer {
+  margin-top: 7.25rem;
+  @include pya(1.55rem);
+  background-color: $colorAccent;
+  color: white;
+  img {
+    width: 180px;
+  }
+  .footer-par-logo {
+    margin-top: 1rem;
+    font-size: 0.9em;
+    text-align: justify;
+    font-family: $robotoLight;
+  }
+  .btn {
+    background-color: white;
+    color: $colorAccent;
+    font-family: $robotoBold;
+  }
+  h5 {
+    font-family: $robotoBold;
+    color: white;
+    font-size: 1.6em;
+  }
+  .footer-item {
+    ul {
+      @include mya(0.55rem);
+      padding-left: 0.2rem;
+      list-style: none;
+      li {
+        @include pya(0.55rem);
+        font-family: $robotoBold;
+        a {
+          color: $colorMain;
+          &:hover {
+            color: $colorTextFooterLighter;
+          }
+        }
+        .dropdown-menu {
+          a {
+            color: $colorText;
+            &:hover {
+              background-color: $colorTextFooterLighter;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-section {
+  margin-top: 4.55rem;
+  h1 {
+    @include h1;
+  }
+  h4 {
+    font-family: $robotoBold;
+    text-align: center;
+  }
+  .about-opps {
+    img {
+      width: 150px;
+    }
+    h5 {
+      font-family: $robotoBold;
+      margin-top: .75rem;
+      text-align: center;
+    }
+    .opp-item {
+      margin-top: 2.22rem;
+      @include flexColCenter;
+    }
+  }
+  .about-opp2 {
+    margin-top: 5.55rem;
+    h3 {
+      font-family: $robotoBold;
+      text-align: justify;
+      font-size: 1.42em;
+    }
+    p {
+      font-family: $robotoLight;
+    }
+    h5 {
+      font-family: $robotoBold;
+      text-align: justify;
+      font-size: 1.42em;
+      letter-spacing: 0.5px;
+    }
+  }
+  .about-opp3 {
+    margin-top: 5.55rem;
+    h5 {
+      @include title(1.55em);
+    }
+    h6 {
+      font-family: $robotoBold;
+      text-align: justify;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+.about-beton {
+  margin-top: 3.55rem;
+  h1 {
+    @include h1;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+.our-photos {
+  margin-top: 3.55rem;
+  h1 {
+    @include h1;
+  }
+  p {
+    text-align: justify;
+  }
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .our-photos-item {
+    margin: 0.4rem;
+  }
+  h4 {
+    font-family: $robotoBold;
+    text-align: center;
+  }
+}
+
+.req-section {
+  margin-top: 3.55rem;
+  h1 {
+    @include h1;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+.contact-map {
+  margin-top: 3.55rem;
+  iframe {
+    width: 100%;
+    @include lg-min {
+      height: 600px;
+    }
+    @include lg-max {
+      height: 400px;
+    }
+    @include sm-max {
+      height: 250px;
+    }
+  }
+}
+
+
+
+#modal-callback {
+  h4 {
+    font-family: $robotoBold;
+  }
+  span {
+    font-family: $robotoLight;
+    font-size: 0.8em;
+  }
+}

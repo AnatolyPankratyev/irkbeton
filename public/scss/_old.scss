@@ -1,0 +1,400 @@
+.slider-area {
+  margin-top: -1px
+}
+
+.slider-area .hero__caption {
+  margin-left: 27px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption {
+    padding-top: 70px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption {
+    padding-top: 70px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero__caption {
+    padding-top: 70px
+  }
+}
+
+.slider-area .hero__caption h1 {
+  font-size: 140px;
+  font-weight: 900;
+  font-family: 'Barlow', sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $colorAccent;
+  margin: 0;
+  padding: 0
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .slider-area .hero__caption h1 {
+    font-size: 135px
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption h1 {
+    font-size: 110px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption h1 {
+    font-size: 72px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero__caption h1 {
+    font-size: 42px
+  }
+}
+
+.slider-area .hero__caption .stock-text {
+  position: relative;
+  left: 119px;
+  top: -38px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .slider-area .hero__caption .stock-text {
+    top: -29px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption .stock-text {
+    top: -19px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption .stock-text {
+    top: -12px;
+    left: 40px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero__caption .stock-text {
+    top: -12px;
+    left: 40px;
+    top: 0;
+    left: 0
+  }
+}
+
+.slider-area .hero__caption .stock-text h2 {
+  font-size: 140px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  position: absolute;
+  color: #fff
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .slider-area .hero__caption .stock-text h2 {
+    font-size: 110px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption .stock-text h2 {
+    font-size: 60px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption .stock-text h2 {
+    font-size: 52px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero__caption .stock-text h2 {
+    font-size: 27px;
+    margin-bottom: 25px
+  }
+}
+
+.slider-area .hero__caption .stock-text h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  -webkit-text-fill-color: transparent
+}
+
+.slider-area .hero__caption .stock-text h2:nth-child(2) {
+  color: $colorAccent;
+  -webkit-animation: animate 4s ease-in-out infinite;
+  animation: animate 4s ease-in-out infinite;
+}
+
+//@keyframes animate {
+//  0%, 100% {
+//    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 69%, 100% 52%, 100% 100%, 0% 100%);
+//  }
+//  50% {
+//    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+//  }
+//}
+
+.slider-area .hero__caption .hero-text1 span, .slider-area .hero__caption .hero-text1 a, .slider-area .hero__caption .hero-text2 span, .slider-area .hero__caption .hero-text2 a {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  display: block
+}
+
+.slider-area .hero__caption .hero-text1 span::before, .slider-area .hero__caption .hero-text1 a::before, .slider-area .hero__caption .hero-text2 span::before, .slider-area .hero__caption .hero-text2 a::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  top: 0;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $colorAccent
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero__caption .hero-text1 span, .slider-area .hero__caption .hero-text1 a, .slider-area .hero__caption .hero-text2 span, .slider-area .hero__caption .hero-text2 a {
+    margin-bottom: 20px
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .slider-area .hero__caption .hero-text2 {
+    margin-top: 100px
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption .hero-text2 {
+    margin-top: 56px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption .hero-text2 {
+    margin-top: 50px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero__caption .hero-text2 {
+    margin-top: 50px
+  }
+}
+
+.hero-overly {
+  position: relative;
+  z-index: 1;
+  height: 650px;
+}
+
+.hero-overly::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-repeat: no-repeat
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero-cap h2 {
+    font-size: 50px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero-cap h2 {
+    font-size: 50px
+  }
+}
+
+.slider-area .hero-cap nav {
+  margin: 7px 0;
+  padding-left: 95px;
+  position: relative
+}
+
+.slider-area .hero-cap nav::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 1px;
+  background: $colorAccent;
+  left: 0;
+  top: 52%;
+  transform: translateY(-50%)
+}
+
+.slider-area .hero-cap .breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0
+}
+
+.slider-area .hero-cap .breadcrumb a {
+  color: $colorAccent;
+  font-size: 17px;
+  text-transform: uppercase
+}
+
+.slider-area .hero-cap .breadcrumb-item + .breadcrumb-item::before {
+  color: $colorAccent;
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero-cap.hero-cap2 {
+    padding-top: 50px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero-cap.hero-cap2 {
+    padding-top: 50px
+  }
+}
+
+.slider-area .hero-cap.hero-cap2 h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero-cap.hero-cap2 h2 {
+    font-size: 37px
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero-cap.hero-cap2 h2 {
+    font-size: 26px
+  }
+}
+
+.hero-overly::before {
+  background-image: -moz-linear-gradient(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%);
+  background-image: -webkit-linear-gradient(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%);
+  background-image: -ms-linear-gradient(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%)
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow", sans-serif;
+  color: #0b1c39;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: none;
+}
+
+a, .button {
+  -webkit-transition: all .3s ease-out 0s;
+  -moz-transition: all .3s ease-out 0s;
+  -ms-transition: all .3s ease-out 0s;
+  -o-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s
+}
+
+a:focus, .button:focus {
+  text-decoration: none;
+  outline: none
+}
+
+a, button {
+  color: #fff;
+  outline: medium none
+}
+
+a, button {
+  color: #1696e7;
+  outline: medium none
+}
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0
+}
+
+.h1-testimonial-active button i {
+  font-size: 13px;
+  position: relative;
+  top: -3px
+}
+
+.btn {
+  background: $colorAccent;
+  -moz-user-select: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 0;
+  padding: 25px 22px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 5px;
+  &:hover {
+    color: white;
+  }
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 101%;
+  background: $colorDarkerAccent;
+  z-index: 1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+  border-radius: 0;
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+  color: #fff!important;
+  z-index: -1
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none
+}
